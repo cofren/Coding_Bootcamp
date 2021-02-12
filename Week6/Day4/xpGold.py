@@ -71,7 +71,7 @@ new_list = string.split(",")
 new_tuple = tuple(new_list)
 print(new_list)
 print(new_tuple)
-"""
+
 
 # Exercise 8
 user_number = ""
@@ -105,7 +105,30 @@ while guess_or_not:
             guess_or_not = True
         
 print(f"You guessed {guess_success} time(s) correct out of a total of {guess_counter} guesses")
+"""
 
+
+# Exercise 9
+user_info = {
+  "customer_name": "",
+  "waiter": "",
+  "item": "",
+  "price": "",
+  "qty": "",
+  "discount": ""
+}
+
+user_info["customer_name"] = input("Whats your name?\n")
+user_info["waiter"] = input("Who was your waiter?\n")
+user_info["item"] = input("What did you order \n")
+user_info["price"] = input("What was the price? \n")
+user_info["qty"] = input("How many did you have?\n")
+user_info["discount"] = input("How much discount did you get?\n")
+
+total_charge = int(user_info["price"]) * int(user_info["qty"])
+
+print(f"The total charge excluding VAT is ${total_charge}.\n Including VAT is ${total_charge * 1.16}. You had: \n blablabla ")
+print(user_info)
 
 
 
