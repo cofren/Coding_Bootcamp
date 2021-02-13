@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .item1 {
+            grid-area: header;
+            background-color:aqua;
+        }
+
+        .item2 {
+            grid-area: hero;
+            background-color: rgb(119, 119, 184);
+        }
+
+        .item3 {
+            grid-area: main;
+            background-color: rgb(218, 172, 45);
+        }
+        
+        .item4 {
+            grid-area: side;
+            background-color: rgb(45, 138, 91);
+
+        }
+
+        .item5 {
+            grid-area: extra;
+            background-color: rgb(70, 68, 65);
+
+        }
+
+        .item6 {
+            grid-area: images;
+            background-color: rgb(55, 126, 73);
+
+        }
+
+        .item7 {
+            grid-area: post;
+            background-color: rgb(124, 63, 116);
+
+        }
+        .item8 {
+            grid-area: footer;
+            background-color: rgb(182, 126, 41);
+
+        }
+        .container {
+            display: grid;
+            grid-gap: 10px;
+            line-height: 75px;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(6,1fr);
+            grid-template-areas:
+                "header header header"
+                "hero hero main"
+                "side side main"
+                "side side extra"
+                "images images post"
+                "footer footer footer";
+        }
+        
+
+        .container > div {
+            font-size: 20px;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1">Header</div>
+        <div class="item2">Hero</div>
+        <div class="item3">Main</div>
+        <div class="item4">Side</div>
+        <div class="item5">Extra</div>
+        <div class="item6">Images</div>
+        <div class="item7">Posts</div>
+        <div class="item8">Footer</div>
+    </div>
+</body>
+</html>

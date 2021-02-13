@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM EVENTS</title>
+</head>
+
+<body>
+
+    <h1>Form Events</h1>
+
+
+    <label>ON CHANGE</label>
+    <input type="text" id="input1">
+    <span id="result1"></span>
+
+    <br></br>
+
+    <label>ON INPUT</label>
+    <input type="text" id="input2">
+    <span id="result2"></span>
+
+    <br></br>
+
+
+    <label>GETTING INPUT VALUES:</label>
+    <form id="form1" onsubmit="getvalue()">
+        <label>First name: </label><input type="text" name="fname" value="Isaac"><br>
+        <label>Last name: </label><input type="text" name="lname" value="Groisman"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <br></br>
+
+
+    <label>GETTING INPUT VALUES 2:</label>
+    <form name="form2">
+        <input type="text" placeholder="Name"><br>
+        <input type="text" placeholder="Last Name"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+    <script>
+
+        // //On Change : event triggers when the element has finished changing.
+        // let newInput1 = document.getElementById('input1')
+        // newInput1.onchange = function () {
+        //     result1.innerHTML = this.value;
+        // };
+
+
+        // //On Input : event triggers every time after a value is modified by the user. 
+        // let newInput2 = document.getElementById('input2')
+        // //console.log(this)
+        // newInput2.oninput = function () {
+        //     result2.innerHTML = this.value;
+        // };
+
+
+        // //GETTING INPUT VALUES FROM FORM 1:
+        // function getvalue() {
+
+        //     //alert('Form Submitted');
+
+        //     //// Prevents the default action of a form in the browser which is: refreshing the page
+        //     event.preventDefault();
+
+        //     form = document.getElementById('form1');
+        //     //console.log(form);
+
+        //     //// Getting the first input tag
+        //     //console.log(form.elements.fname);
+        //     //console.log(form.elements[0]);
+
+        //     //// Getting the second input tag
+        //     //console.log(form.elements.lname);
+        //     //console.log(form.elements[1]);
+
+        //     ////Store the 2 inputs in variables to get the values
+        //     firstName = form.elements.fname.value
+        //     lastName = form.elements.lname.value
+
+        //     console.log(firstName);
+        //     console.log(lastName);
+
+        // }
+
+
+
+
+        // // //GETTING INPUT VALUES FROM FORM 2:
+        // let form2 = document.forms.form2;
+        // //console.log(form2);
+
+        // // Add an Event Listener to the form (type of event: submit)
+        // form2.addEventListener('submit', gett);
+
+        // function gett() {
+
+        //     //console.log('Working');
+
+        //     event.preventDefault();
+
+        //     let fName = form2.elements[0];
+        //     //console.log(fName);
+
+        //     let lName = form2.elements[1];
+        //     //console.log(lName);
+
+        //     console.log(fName.value)
+        //     console.log(lName.value)
+
+        // }
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

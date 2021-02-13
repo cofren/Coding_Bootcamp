@@ -1,0 +1,5 @@
+             Set                Tuple               List                Dictionary
+ordered     no                  yes                 yes                 yes
+changeable  no                  no                  yes                 yes
+duplicates  no                  yes                 yes                 no (not the same key)
+example     {"apple","banana"}  ("apple","banana")  ["apple","banana"]  {key1: value1, key2: value2}

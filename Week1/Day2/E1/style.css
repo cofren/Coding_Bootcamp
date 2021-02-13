@@ -1,0 +1,15 @@
+table.Table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  table.Table td, table.Table th {
+    padding: 3px 5px;
+  }
+  table.Table thead {
+    }
+  table.Table thead th {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+  }

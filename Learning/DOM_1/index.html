@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <style>
+    .red-background {
+      background-color: red;
+    }
+
+    .visible{
+      display: block;
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- <h1>Hello World!</h1>
+
+  <p>my first paragraph</p>
+
+  <p class="main">my first main paragraph</p>
+
+  <p class="main second">my second main paragraph</p>
+
+  <p class="par">This is my Third paragraph</p>
+
+
+  <a id="myLink">A link to my website</a>
+
+  <br></br>
+
+
+  <img id="myImage" alt="not showing"> -->
+
+
+
+
+
+  <!-- <div id="div1">
+
+        <p id="p1">This is a paragraph.</p>
+
+        <p id="p2">This is another paragraph.</p>
+
+    </div> 
+
+      <h1>Hello World</h1> -->
+
+      <div id="elem" about="Elephant" class="foo">This is a div</div>
+
+  
+
+
+
+
+  <script>
+
+
+    //QuerySelector
+
+    // var paragraph = document.querySelector("p.main");
+
+    // console.log(paragraph)
+
+
+
+    //QuerySelectorAll
+
+    // var paragraphs = document.querySelectorAll("p.main");
+
+    // console.log(paragraphs[0])
+
+
+
+
+    //CHANGING ELEMENTS
+
+    //var header = document.querySelector("h1");
+
+    //header.innerHTML = 'Isaac';
+
+    //header.textContent = 'Gabriel';
+
+    //header.innerText = 'Hiiiiiii';
+
+
+
+    //SET AND CHANGE ATTRIBUTES
+
+    //var myLink = document.querySelector('#myLink');
+
+    //console.log(myLink);
+
+    //myLink.href = "http://www.newwebsite.com";
+
+    //myLink.setAttribute('href', 'http://www.newwebsite.com');
+
+
+    //var myImage = document.querySelector('#myImage');
+
+    //console.log(myImage);
+
+    //myImage.src = 'https://i.ytimg.com/vi/p8ytrJ1ryBQ/maxresdefault.jpg';
+
+    //myImage.setAttribute('src', 'https://i.ytimg.com/vi/p8ytrJ1ryBQ/maxresdefault.jpg');
+
+
+
+
+
+
+
+    //CHANGE CSS PROPERTIES
+
+    // let pars = document.querySelector(".par");
+
+    // console.log(pars);
+
+    // //In CSS, one em is defined as the current font size, however that is defined.
+    // pars.style.fontSize = "2em";
+
+    // pars.style.color = 'red';
+
+    // pars.classList.add('red-background');
+
+    // pars.style.backgroundColor = 'yellow';
+
+    // pars.style.backgroundColor = 'blue';
+
+
+
+
+
+
+
+    //CREATING AND ADDING ELEMENTS
+
+
+    //var para = document.createElement("p");
+
+    //var node = document.createTextNode("This is new.");
+    //para.appendChild(node);
+
+
+    // para.innerHTML = 'Isaac';
+
+    // para.innerHTML = 'My new paragraph';
+
+    // para.innerHTML = '<a href="#"> Link </a>';
+
+
+
+    // var element = document.querySelector("#div1");
+
+    // console.log(element);
+
+    // element.appendChild(para);
+
+
+
+
+
+    // INSERT BEFORE (on the top)
+
+    // let para = document.createElement("p");
+
+    // let node = document.createTextNode("This is new.");
+
+    // para.appendChild(node);
+
+
+
+    // let element = document.querySelector("#div1");
+
+    // let child = document.querySelector("#p1");
+
+    // element.insertBefore(para, child);
+
+
+
+
+    //REMOVING ELEMENTS
+
+
+    // let parent = document.querySelector("#div1");
+
+    // let child = document.querySelector("#p1");
+
+    // parent.removeChild(child);
+
+
+
+    // var header = document.querySelector('h1');
+
+    // console.log(header);
+
+    // header.remove();
+
+
+
+
+
+    //REPLACE ELEMENTS
+
+
+    // let newPar = document.createElement("p");
+
+    // let node = document.createTextNode("This is new.");
+
+    // newPar.appendChild(node);
+
+
+    // let parent = document.querySelector("#div1");
+
+    // let oldPar = document.querySelector("#p1");
+
+    // parent.replaceChild(newPar, oldPar);
+
+
+
+
+
+    /////////////////////exercise 1 week 4 day 2 /////////////
+    /* <html>
+    <body>
+      <div>Users:</div>
+      <ul>
+        <li>John</li>
+        <li>Pete</li>
+      </ul>
+    </body>
+    </html> */
+
+    // For each of the questions, find 2 WAYS of accessing :
+
+    // 1. The div DOM node?
+
+
+
+    // let divOne = document.querySelector("div");
+    // // ​
+    // let divTwo= document.getElementsByTagName("div")[0]; 
+    // // ​
+    // console.log(divOne);
+    // // ​
+    // console.log(divTwo)
+
+
+    // // 2. The ul DOM node?
+    //let getTheUl = document.querySelector("ul");
+    // // ​
+    // let getTheUlAgain = document.getElementsByTagName("ul")[0];
+    // // ​
+    // let getTheUl3 = document.querySelectorAll("ul")[0];
+    // console.log(getTheUl);
+    // console.log(getTheUlAgain);
+    // console.log(getTheUl3);
+    // ​
+    // // 3. The second li (with Pete)?
+    // ​
+    //let getPete = document.getElementsByTagName("li") [1];
+    //let getPeteAgain = getTheUl.lastElementChild;
+    // ​
+    //console.log(getPete);
+    //console.log(getPeteAgain.innerHTML); /// innerHTML will show the content of the element
+
+
+
+
+
+    // Accessing nodes with methods
+
+    // element.getElementsByTagName()
+    // element.querySelector()
+    // element.querySelectorAll()
+
+
+
+    // element.getElementById():
+
+    // <h1 id="one">Welcome</h1>
+    // <p>This is the welcome message.</p>
+    // <h2>Technology</h2>
+    // <p>This is the technology section.</p>
+
+    //let text = document.getElementById("one").innerHTML;
+    //alert("The first heading is " + text);
+
+
+
+
+
+
+
+    // element.getElementsByClassName()
+
+    // <div class="example">First div element with class="example".</div>
+
+    // <div class="example">Second div element with class="example".</div>
+
+    //var x = document.getElementsByClassName("example");
+    //console.log(x);
+    //x[1].innerHTML = "Hello World!";
+
+
+
+
+    //Matches() Example:
+
+    // <a href="http://example.com/file.zip">...</a>
+    // <a href="http://ya.ru">...</a>
+
+    // can be any collection instead of document.body.children
+    // for (let elem of document.body.children) {
+    //     if (elem.matches('a[href$="zip"]')) {
+    //       // check if it ends with "zip"
+    //       alert("The archive reference: " + elem.href );
+    //     }
+    //   }
+
+
+
+
+    // Closest Examples:
+
+    // <h1>Contents</h1>
+
+    // <div class="contents">
+    //   <ul class="book">
+    //     <li class="chapter">Chapter 1</li>
+    //     <li class="chapter">Chapter 2</li>
+    //   </ul>
+    // </div>
+
+
+    //let chapter = document.querySelector('.chapter'); // LI
+
+    //console.log(chapter.closest('.book')); // UL
+    //console.log(chapter.closest('.contents')); // DIV
+    //console.log(chapter.closest('h1')); // null (because h1 is not an ancestor)
+
+
+
+
+// Exercise 2:
+
+// <html>
+// <body>
+//   <div id="container">Users:</div>
+//   <ul class="list">
+//     <li>John</li>
+//     <li>Pete</li>
+//   </ul>
+//   <ul class="list">
+//     <li>Sarah</li>
+//     <li>Dan</li>
+//   </ul>
+// </body>
+// </html>
+
+// For each of the questions, find 2 PROPERTIES to access :
+
+// 1. The div node
+
+// 2. The ul nodes, and render all of it's children one by one
+
+// 3. The first li of each ul
+
+
+// Answers:
+
+// //1
+// let div = document.getElementById('container');
+// console.log(div);
+
+// let div2 = document.querySelector('div');
+// console.log(div2);
+
+// //2
+// let ul = document.querySelectorAll('ul')[0];
+// console.log(ul);
+
+// let ul1 = document.getElementsByClassName('list')[0];
+// console.log(ul1);
+
+// let child = ul.firstElementChild;
+// console.log(child);
+
+// let child2 = ul.lastElementChild;
+// console.log(child2);
+
+// let ul2 = document.getElementsByClassName('list')[1];
+// console.log(ul2);
+
+// let child21 = ul2.firstElementChild;
+// console.log(child21);
+
+// let child22 = ul2.lastElementChild;
+// console.log(child22);
+
+
+
+
+
+
+// Accessing And Changing A Value Of An Attribute
+
+// <div id="elem" about="Elephant" style="">This is a div</div>
+
+//let newDiv = document.getElementById("elem")
+
+// //getAttribute('name attribute')
+//console.log(newDiv.getAttribute('about')); // return 'Elephant'
+
+// //setAttribute(name attribute, value attribute)
+//newDiv.setAttribute('style', "color:blue;");  
+
+// //you get --> <div id="elem" about="Elephant" style="color:blue" ></div>
+
+// //loop through the attributes of an element
+// for (let attr of elem.attributes) { // Lists all attributes
+//   console.log(attr.name + '=' + attr.value);
+// }
+
+
+
+
+// Exercise 1:
+
+// <html>
+// <body> 
+//     <p>
+//         <a id="dI" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://developers.institute/">Developers Institute</a>
+//     </p> 
+// </body>
+// </html> 
+// Write variables to get the value of the attributes of the specified link :
+
+// href
+// hreflang
+// rel
+// target
+// type
+
+//Answers:
+
+// let a = document.getElementById('dI');
+// console.log(a);
+
+// let href = a.href;
+// console.log(href);
+
+// let hreflang = a.hreflang;
+// console.log(hreflang);
+
+// let rel = a.rel;
+// console.log(rel);
+
+// let target = a.target;
+// console.log(target);
+
+// let type = a.type;
+// console.log(type);
+
+
+
+
+
+// Changing The Style Of A Element:
+
+// <div id="elem">
+//   <div id="elem-content">Element</div>
+// </div>
+
+// get the element
+// let elem = document.getElementById('elem');
+
+// // make its background red
+// elem.style.background = 'red';
+
+
+
+
+// DOM ClassList Property
+
+// <div id="elem" about="Elephant" class="foo">This is a div</div>
+
+//let div = document.getElementById("elem")
+
+// // remove class : remove('name of class')
+//div.classList.remove("foo");
+
+// // add class : add ('name of class')
+//div.classList.add("anotherclass");
+// //<div id="elem" about="Elephant" class="anotherclass"></div>
+
+// // add or remove multiple classes
+//div.classList.add("foo", "bar", "baz");
+//div.classList.remove("foo", "bar", "baz");
+
+// // replace class "foo" with class "bar"
+//div.classList.replace("foo", "bar");
+
+// // check if the attribute class contains foo : return True or False
+//console.log(div.classList.contains("foo"));
+
+// // if visible is set remove it, otherwise add it
+//div.classList.toggle("visible");
+// REF EXAMPLE: https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_element_classlist_toggle
+//              https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onclick_dropdown
+
+
+
+// Exercise 2:
+
+// <html>
+// <body> 
+//     <p id ='text'>DOM Attributes! Yeahhh !!</p>  
+// </body> 
+// </html> 
+
+// Modify the style of the paragraph text (such as fontSize, fontFamily, color, etc. )through javascript code.
+
+// Answers:
+
+// let text = document.getElementById('text');
+// console.log(text);
+
+// text.style.fontSize = '100px';
+// text.style.fontFamily = 'courier';
+// text.style.color = 'Purple';
+
+
+
+  </script>
+</body>
+
+</html>

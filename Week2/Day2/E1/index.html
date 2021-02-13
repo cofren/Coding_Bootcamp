@@ -1,0 +1,78 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            grid-area: header;
+            font-size: 2em;
+            text-align: center;
+        }
+        
+        .numbers {
+            background-color: grey;
+            width: 25vh;
+            margin: 3vh;
+            height: 5vh;
+            text-align: center;
+            font-size: 2em;
+            color: rgb(21, 39, 207);
+        }
+
+        .text {
+            background-color: grey;
+            width: 25vh;
+            margin: 3vh;
+            height: 2vh;
+            text-align: center;
+            font-size: 1em;
+            color: rgb(20, 22, 39);
+        }
+
+
+        .box-container {
+            background-color: grey;
+            width: 25vh;
+            margin: 3vh;
+            height: 20vh;
+            text-align: center;
+            font-size: 1em;
+            color: rgb(20, 22, 39);
+        }
+        .grid-container {
+            display: grid;
+            grid: 
+            'header header header'
+            'number number number'
+            'text text text'
+            'box box box';
+            justify-items: center;
+    
+        }
+
+    
+        
+
+    </style>
+</head>
+<body>
+    
+   <div class="grid-container">
+        <div class=header>Shopify powers ambititous entrepreneurs<br>all over the world</div>
+        <div class=numbers>500,000</div>
+        <div class=numbers>1,000,000+</div>
+        <div class=numbers>$46B+</div>
+        <div class=text>This is great</div>
+        <div class=text>Fantastic</div>
+        <div class=text>Awesome</div>
+        <div class=box-container>Box1</div>
+        <div class=box-container>Box2</div>
+        <div class=box-container>Box3</div>
+    </div>  
+</body>
+</html>

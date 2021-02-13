@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+  }
+
+/* Style the top navigation bar */
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(206, 226, 240);
+}
+
+/* Style the navigation bar links */
+nav a {
+    color: rgb(5, 5, 5);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+.main {
+    background-image: url("../../../Graphics/Water.jpg");
+    background-repeat: no-repeat;
+    color: white;
+}
+
+div.Table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  .divTable.Table .divTableCell, .divTable.Table .divTableHead {
+    padding: 3px 2px;
+  }
+  .divTable.Table .divTableBody .divTableCell {
+    font-size: 11px;
+  }
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableHeading { display: table-header-group;}
+.divTableBody { display: table-row-group;}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge: Create a solar system</title>
+        <style>
+            body {
+                background-color: black;
+                padding: 10px;
+            }
+            .planet {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                text-align: center;
+                padding: 10px;
+                position: relative;
+            }
+            .moon {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background: rgb(237, 237, 237);
+            }
+        </style>
+    </head>
+    <body>
+
+
+    <script>
+
+        // array solarSystem
+        let solarSystem = [
+
+                { 'name': 'Mercury', 'moons': 0, 'color': 'orange'},
+                { 'name': 'Venus', 'moons': 0, 'color': 'grey'},
+                { 'name': 'Earth', 'moons': 1, 'color': 'blue'},
+                { 'name': 'Mars', 'moons': 2, 'color': 'red'},
+                { 'name': 'Jupiter', 'moons': 79, 'color': 'brown'},
+                { 'name': 'Saturn', 'moons': 62, 'color': 'yellow'},
+                { 'name': 'Uranus', 'moons': 27, 'color': 'lightblue'},
+                { 'name': 'Neptune', 'moons': 14, 'color': 'darkblue'},
+
+        ]
+
+
+        // loop all the planets in the array
+        for (planet of solarSystem){
+
+            //console.log(planet);
+
+            // create a planet
+            let planetDiv = document.createElement('div');
+
+            // add .planet class
+            planetDiv.classList.add('planet');
+
+            // add name to the planet
+            planetDiv.innerHTML = planet.name;
+
+            //console.log(planetDiv);
+
+
+            // CREATING THE MOONS:
+
+            // limit the iteration loop
+            let i = 1;
+
+            // variable to store the moon
+            let moonDiv;
+
+            // loop solar array till the number of moons
+            while (i <= planet.moons){
+
+                // create moon
+                moonDiv = document.createElement('div');
+                //console.log(moonDiv);
+
+                // add moon class
+                moonDiv.classList.add('moon');
+                //console.log(moonDiv)
+
+                // move the moons from the left side
+                //console.log(i)
+                let moveMoon = (i * 30) + 90 + 'px';
+                moonDiv.style.left = moveMoon;
+
+                // color the moon
+                moonDiv.style.backgroundColor = 'white';
+
+                // append the moon
+                planetDiv.appendChild(moonDiv);
+
+
+
+                i++;
+            }
+
+
+
+
+
+            // give the color
+            planetDiv.style.backgroundColor = planet.color;
+
+            // append to the body
+            document.body.appendChild(planetDiv);
+        }
+
+
+
+    </script>
+
+
+    </body>
+</html>
