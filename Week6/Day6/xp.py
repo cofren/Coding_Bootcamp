@@ -58,5 +58,11 @@ print(disney_c)
 disney_i = {}
 for index,user in enumerate(users):
   if "i" in user:
-  disney_i.update({user:index})
+    disney_i.update({user:index})
 print(disney_i)
+
+disney_mp = {}
+for index,user in enumerate(users):
+  if user[0,1] == "m":
+    disney_i.update({user:index})
+print(disney_mp)
