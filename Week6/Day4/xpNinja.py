@@ -85,7 +85,7 @@ for number in range(1,11):
   number = input("Please enter a number between -100 and 100:\n")
   list_from_user.append(number)
 print(list_from_user)
-"""
+
 
 # Exercise 3
 text = "SPD-Kanzlerkandidat Olaf Scholz verzichtet nach SPIEGEL-Informationen im Wahlkampf auf ein sogenanntes Schattenkabinett. Normalerweise versammeln Kanzlerkandidaten in einem solchen Team Leute um sich, die später Kabinettsposten erhalten sollen."
@@ -94,6 +94,12 @@ words = text.count(" ")
 print(f"This text is {len(text)} characters long.")
 print(f"The text has {sentences -1} sentence(s).")
 print(f"The text has {words} words.")
-
+"""
 
 # Exercise 4
+
+str = "New to Python or choosing between Python 2 and Python 3? Read Python 2 or Python 3."
+list = str.split(" ")
+print(list)
+for item in list:
+  print(f"{item}:{item.count(item)}")
