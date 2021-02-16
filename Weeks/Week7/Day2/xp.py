@@ -54,13 +54,17 @@ make_shirt("S","New Shirt Text")
 """
 # Exercise 6
 magicians = ["Merlin","David","Houdini"]
+
 def show_magicians(names):
     for name in names:
         print(name)
 show_magicians(magicians)
 
 def make_great(magicians):
-    for magician in magicians:
-        magician + " the Great"
-make_great(magicians)
-print(magicians)
+    great_magician=[]
+    for name in magicians:
+        name += " the Great"
+        great_magician.append(name)
+    return ", ".join(great_magician)
+
+print(make_great(magicians))
