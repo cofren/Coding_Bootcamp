@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <p>this is the greeting page</p>
+    <p>The time is {{ date_obj.hour }}: {{ date_obj.minute }}</p>
+    {% if date_obj.hour >= 21 %}
+        <p>Its past 21 o´clock</p>
+    {% endif %}
+{% endblock content %}
