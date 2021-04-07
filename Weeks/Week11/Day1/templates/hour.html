@@ -1,0 +1,37 @@
+{% set is_night = date_obj.hour < 23 %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hour</title>
+    <style>
+        body {
+            {% if is_night %}
+                background-color: #ffffff;
+                color: #000000;
+            {% else %}
+                background-color: #1A1A2E;
+                color: #ffffff;
+            {% endif %}
+        }
+    </style>
+</head>
+<body>
+    {% set daypic_height = 160 %}
+    {% set daypic_width = 160 %}
+
+    {% if is_night %}
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXoBu4xTxlJjS2i8z71kKnhf-lyhEm2m1BMw&usqp=CAU" height="{{ daypic_height }}" width="{{ daypic_width }}" />
+    {% else %}
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Feather-weather-moon.svg/1200px-Feather-weather-moon.svg.png"   height="{{ daypic_height }}" width="{{ daypic_width }}" />
+    {% endif %}
+    <br>
+
+    <h1>The hour is: {{ date_obj.hour }}:{{ date_obj.minute }}:{{ date_obj.second }}</h1>
+    {% if is_night %}
+        <small>It's late, good night!</small>
+    {% endif %}
+
+</body>
+</html>

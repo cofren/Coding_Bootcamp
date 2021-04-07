@@ -1,6 +1,7 @@
 from . import app
 import datetime
 import flask
+from . import forms
 
 @app.route("/")
 def home():
@@ -22,3 +23,9 @@ def hello():
 @app.route("/Products")
 def products():
     return flask.render_template("products.html")
+
+@app.route('/test-form')
+def test():
+    form = forms.TestForm()
+
+    return flask.render_template("test_form.html", form=form)

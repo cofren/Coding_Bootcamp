@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <form action="", method="GET">
+
+        <p>
+        {{ form.username.label }}
+        {{ form.username() }}
+        </p>
+        <p>
+        {{ form.submit() }}
+        </p>
+    </form>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <form action="", method="POST">
+        <h3>Here is the Sign-Up Form</h3>
+        <p>
+            Errors: {{ form.errors }}
+        </p>
+        <p>
+            {{ form.username.label }}
+            {{ form.username() }}
+        </p>
+        <p>
+            {{ form.password.label }}
+            {{ form.password() }}
+        </p>
+        <p>
+            {{ form.submit() }}
+        </p>
+    </form>
+{% endblock content %}

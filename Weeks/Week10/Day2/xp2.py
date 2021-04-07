@@ -14,7 +14,7 @@
 
 #Exercise 3
 
-# from datetime import datetime,timedelta
+from datetime import datetime,timedelta
 
 # b_date_input = input("Please enter your birthdate in the format yyyy-mm-dd:")
 # b_date_list = b_date_input.split("-")

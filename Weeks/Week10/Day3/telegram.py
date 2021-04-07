@@ -2,7 +2,7 @@ import requests
 import time
 
 telegram_token = "1600362325:AAH4cjoJXbJrk_ZtbVylW5jI3QHAk-5vgis"
-google_news_token = "5719809a4f814d0d9f8cb98e7a3d97de"
+google_news_token = "2e4f47b8daec4d4882e41b85a87faf43"
 
 current_id = 0
 
